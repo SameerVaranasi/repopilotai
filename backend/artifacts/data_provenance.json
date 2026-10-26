@@ -1,0 +1,156 @@
+{
+  "fixture": false,
+  "collected_at": "2026-10-26T06:54:15.559358+00:00",
+  "config": {
+    "repos": "repos.json",
+    "out": "data/processed",
+    "prs_per_repo": 12,
+    "issues_per_repo": 100,
+    "seed": 42
+  },
+  "repositories": [
+    {
+      "repo": "pallets/flask",
+      "split": "train",
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "html_url": "https://github.com/pallets/flask",
+      "beginner_label_mapping": [
+        "good first issue"
+      ]
+    },
+    {
+      "repo": "encode/httpx",
+      "split": "train",
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "html_url": "https://github.com/encode/httpx",
+      "beginner_label_mapping": [
+        "good first issue"
+      ]
+    },
+    {
+      "repo": "pytest-dev/pytest",
+      "split": "train",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "html_url": "https://github.com/pytest-dev/pytest",
+      "beginner_label_mapping": [
+        "good first issue"
+      ]
+    },
+    {
+      "repo": "psf/requests",
+      "split": "train",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "html_url": "https://github.com/psf/requests",
+      "beginner_label_mapping": []
+    },
+    {
+      "repo": "pallets/click",
+      "split": "train",
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "html_url": "https://github.com/pallets/click",
+      "beginner_label_mapping": []
+    },
+    {
+      "repo": "encode/starlette",
+      "split": "validation",
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "html_url": "https://github.com/Kludex/starlette",
+      "beginner_label_mapping": [
+        "good first issue"
+      ]
+    },
+    {
+      "repo": "pallets/werkzeug",
+      "split": "validation",
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "html_url": "https://github.com/pallets/werkzeug",
+      "beginner_label_mapping": [
+        "good first issue"
+      ]
+    },
+    {
+      "repo": "tiangolo/typer",
+      "split": "test",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "html_url": "https://github.com/fastapi/typer",
+      "beginner_label_mapping": [
+        "good first issue"
+      ]
+    },
+    {
+      "repo": "pydantic/pydantic",
+      "split": "test",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "html_url": "https://github.com/pydantic/pydantic",
+      "beginner_label_mapping": []
+    }
+  ],
+  "skipped": [
+    {
+      "repo": "tiangolo/typer",
+      "pr": 1863,
+      "reason": "over 100 changed files"
+    }
+  ],
+  "limitations": [
+    "PR text is a proxy query, not necessarily a linked issue.",
+    "Changed files are weak positives; unchanged files can still be relevant.",
+    "Unlabeled issues are not known to be difficult.",
+    "Recent capped samples are not representative; ranking uses sampled candidates.",
+    "PR descriptions may explicitly name changed paths; this can inflate ranking metrics."
+  ]
+}

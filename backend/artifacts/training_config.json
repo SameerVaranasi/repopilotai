@@ -1,0 +1,25 @@
+{
+  "data": "data/processed",
+  "out": "artifacts",
+  "device": "cuda",
+  "epochs": 30,
+  "batch_size": 64,
+  "max_features": 2048,
+  "hidden": 64,
+  "patience": 5,
+  "lr": 0.001,
+  "seed": 42,
+  "allow_fixture": false,
+  "version": "repopilot-step1-v1",
+  "device_used": "cuda",
+  "versions": {
+    "python": "3.13.14",
+    "torch": "2.6.0+cu124",
+    "sklearn": "1.9.1"
+  },
+  "dataset_sha256": {
+    "file_pairs.csv": "659da30e400679807bc362e72879413f60cd9c087024ba300fec62039436b405",
+    "issues.csv": "ac79be76c63b01b105dcf6574b4ae7c2b47f225e6bead025ac745e8c96fba10b",
+    "provenance.json": "67c4460341fc375fb2c795051d6ed42664b580b1dc9e17f4a7330944a2ed2fc8"
+  }
+}

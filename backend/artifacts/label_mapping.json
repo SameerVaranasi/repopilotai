@@ -1,0 +1,10 @@
+{
+  "file": {
+    "0": "sampled unchanged weak negative",
+    "1": "changed file weak positive"
+  },
+  "issue": {
+    "0": "not explicitly beginner-labeled",
+    "1": "explicitly beginner-labeled"
+  }
+}

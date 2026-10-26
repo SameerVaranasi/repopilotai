@@ -1,0 +1,125 @@
+{
+  "version": "repopilot-step1-v1",
+  "fixture_only": false,
+  "device": "cuda",
+  "interpretation": "Held-out repositories; weak proxy labels and sampled file candidates",
+  "rag_metrics": {
+    "status": "unavailable",
+    "reason": "RAG is not implemented in this training milestone"
+  },
+  "file": {
+    "neural": {
+      "precision_at_5": 0.20000000000000004,
+      "recall_at_5": 0.4777777777777778,
+      "mrr": 0.5019790394790394,
+      "map": 0.429326923076923,
+      "evaluated_queries": 24,
+      "candidate_scope": "sampled files per PR; not full-repository ranking",
+      "precision_denominator": 5
+    },
+    "logistic_regression": {
+      "precision_at_5": 0.26666666666666666,
+      "recall_at_5": 0.7319444444444446,
+      "mrr": 0.5921436202686202,
+      "map": 0.5361251017501018,
+      "evaluated_queries": 24,
+      "candidate_scope": "sampled files per PR; not full-repository ranking",
+      "precision_denominator": 5
+    },
+    "tfidf_cosine": {
+      "precision_at_5": 0.2666666666666667,
+      "recall_at_5": 0.7652777777777778,
+      "mrr": 0.5954545454545455,
+      "map": 0.5455107623857623,
+      "evaluated_queries": 24,
+      "candidate_scope": "sampled files per PR; not full-repository ranking",
+      "precision_denominator": 5
+    },
+    "best_epoch": 21,
+    "reload_check": "passed",
+    "splits": {
+      "train": {
+        "rows": 884,
+        "positives": 116,
+        "negatives": 768,
+        "repositories": [
+          "encode/httpx",
+          "pallets/click",
+          "pallets/flask",
+          "psf/requests",
+          "pytest-dev/pytest"
+        ]
+      },
+      "validation": {
+        "rows": 424,
+        "positives": 64,
+        "negatives": 360,
+        "repositories": [
+          "encode/starlette",
+          "pallets/werkzeug"
+        ]
+      },
+      "test": {
+        "rows": 403,
+        "positives": 43,
+        "negatives": 360,
+        "repositories": [
+          "pydantic/pydantic",
+          "tiangolo/typer"
+        ]
+      }
+    }
+  },
+  "issue": {
+    "neural": {
+      "precision": 0.3333333333333333,
+      "recall": 0.75,
+      "f1": 0.46153846153846156,
+      "roc_auc": 0.796875,
+      "roc_auc_note": null
+    },
+    "logistic_regression": {
+      "precision": 0.2,
+      "recall": 0.75,
+      "f1": 0.3157894736842105,
+      "roc_auc": 0.734375,
+      "roc_auc_note": null
+    },
+    "baseline_threshold": 0.44999999999999996,
+    "neural_threshold": 0.39999999999999997,
+    "best_epoch": 24,
+    "reload_check": "passed",
+    "splits": {
+      "train": {
+        "rows": 241,
+        "positives": 136,
+        "negatives": 105,
+        "repositories": [
+          "encode/httpx",
+          "pallets/click",
+          "pallets/flask",
+          "psf/requests",
+          "pytest-dev/pytest"
+        ]
+      },
+      "validation": {
+        "rows": 92,
+        "positives": 45,
+        "negatives": 47,
+        "repositories": [
+          "encode/starlette",
+          "pallets/werkzeug"
+        ]
+      },
+      "test": {
+        "rows": 36,
+        "positives": 4,
+        "negatives": 32,
+        "repositories": [
+          "pydantic/pydantic",
+          "tiangolo/typer"
+        ]
+      }
+    }
+  }
+}
