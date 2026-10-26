@@ -1,0 +1,16 @@
+
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "repopilot_api.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "repopilot_api.py"
+    }
+  ]
+}
